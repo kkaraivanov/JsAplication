@@ -15,10 +15,10 @@ const logout = () => api.get(endpoint.logout)
 
 // common services
 const getCatalogData = () => api.get(endpoint.catalogData);
-const getById = (id) => api.get(endpoint.catalog + id);
-const deleteById = (id) => api.del(endpoint.catalog + id);
-const addData = (data) => api.post(endpoint.catalog, data)
-const editData = (id, data) => api.put(endpoint.catalog + id, data)
+const getById = (id) => api.get(endpoint.catalogGet + id);
+const deleteById = (id) => api.del(endpoint.catalogGet + id);
+const addData = (data) => api.post(endpoint.catalogPost, data)
+const editData = (id, data) => api.put(endpoint.catalogGet + id, data)
 const getUserCatalog = (id) => api.get(`/data/memes?where=_ownerId%3D%22${id}%22&sortBy=_createdOn%20desc`);
 
 export const dataService = {

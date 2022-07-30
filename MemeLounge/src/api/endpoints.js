@@ -4,5 +4,6 @@ export const endpoint = {
     register: '/users/register',
     // common endpoints
     catalogData: '/data/memes?sortBy=_createdOn%20desc',
-    catalog: '/data/memes/'
+    catalogGet: '/data/memes/',
+    catalogPost: '/data/memes'
 }
